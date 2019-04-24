@@ -10,6 +10,12 @@ void IsValid(int sum);
 
 int main()
 {
+long long number;
+
+do
+{
+cout << "Enter 16-digits card number.\n";
+cin >> number;
 
 system("pause");
 return 0;
