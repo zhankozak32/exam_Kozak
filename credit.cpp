@@ -6,6 +6,7 @@ int SumOdd(int* arr);
 void AlgorithmLuhn(long long& number);
 bool IsCorrect(const long long& number);
 int SumEven(int* arr);
+void IsValid(int sum);
 
 int main()
 {
@@ -74,3 +75,9 @@ sum += (arr[i] * 2) / 10;
 
 return sum;
 }
+
+void IsValid(int sum)
+{
+cout << "Number of your card is " << (sum % 10 == 0 ? "" : "in") << "valid.\n";
+}
+
