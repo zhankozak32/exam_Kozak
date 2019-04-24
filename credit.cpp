@@ -5,6 +5,7 @@ int * FormArr(const long long& number);
 int SumOdd(int* arr);
 void AlgorithmLuhn(long long& number);
 bool IsCorrect(const long long& number);
+void IsValid(int sum);
 
 int main()
 {
@@ -55,4 +56,9 @@ return false;
 }
 
 return true;
+}
+
+void IsValid(int sum)
+{
+cout << "Number of your card is " << (sum % 10 == 0 ? "" : "in") << "valid.\n";
 }
