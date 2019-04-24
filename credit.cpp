@@ -5,6 +5,7 @@ int * FormArr(const long long& number);
 int SumOdd(int* arr);
 void AlgorithmLuhn(long long& number);
 bool IsCorrect(const long long& number);
+int SumEven(int* arr);
 
 int main()
 {
@@ -55,4 +56,21 @@ return false;
 }
 
 return true;
+}
+
+int SumEven(int * arr)
+{
+int sum = 0;
+for (int i = 1; i < 16; i += 2)
+{
+if (arr[i] * 2 < 10)
+sum += arr[i] * 2;
+else
+{
+sum += (arr[i] * 2) % 10;
+sum += (arr[i] * 2) / 10;
+}
+}
+
+return sum;
 }
