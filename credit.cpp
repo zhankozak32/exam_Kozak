@@ -10,6 +10,16 @@ void IsValid(int sum);
 
 int main()
 {
+	
+if (!IsCorrect(number))
+{
+cout << "Incorrect input.\n";
+continue;
+}
+break;
+} while (true);
+
+AlgorithmLuhn(number);
 
 system("pause");
 return 0;
